@@ -37,7 +37,7 @@ Key Characteristics:
 
 *One big table with 29 different columns with one row per customer.
 *Snapshot of the database at a specific moment in time, meaning there is no time dimension.
-*The dataset contains more than just dimensions. Here is a view of the [metadata] (https://assets.datacamp.com/production/repositories/5993/datasets/c55ad82061b13bc07f6516e51cba9883a90bfa27/Metadata%20-%20Case%20Study_Analyzing%20Customer%20Churn%20in%20Power%20BI.pdf)
+*The dataset contains more than just dimensions. Here is a view of the [metadata](https://assets.datacamp.com/production/repositories/5993/datasets/c55ad82061b13bc07f6516e51cba9883a90bfa27/Metadata%20-%20Case%20Study_Analyzing%20Customer%20Churn%20in%20Power%20BI.pdf)
 
 Data check
 ---
@@ -77,6 +77,7 @@ Attitude of support person
 Customer Churn Reasons
 
 Digging deeper into churn categories
+---
 
 Churn Reasons are grouped together in the Churn Category column. The “Extra data charges”, “Price too high” and other price related reasons are grouped together in the “Price” category. I will be displaying all churn categories in one visualization.
 
@@ -85,12 +86,14 @@ Churned customers by category
 The largest proportion of churned customers churning is related to the competitor category.
 
 Using Maps
+---
 
 Databel wants to know if the aggressive promotions launched by competitors in different states has had an impact on their customers. The task is to create a map that will allow me to look at the churn rate by state.
 
 State Churn Rate
 
 Insights discovered so far
+---
 
 The Churn rate is for Databel is on average 27%
 45% of the reasons why customers churn is related to competitors
@@ -98,6 +101,7 @@ The Churn rate in California is abnormally high
 The next stage is to analyze more columns, starting with the demographics of Databel.
 
 Analyzing Demographics
+---
 
 The IF() method will be used to create a column with three age demography categories:
 
@@ -110,6 +114,7 @@ Demographics Churn Rate
 The churn rate for senior citizens is higher than the average.
 
 Analyzing Age groups
+---
 
 From the above visualization, the senior citizens churn more often. This suggests the need t have a more detailed look at the ages. Next, I will create combo chart visualizing the number of customers per bracket and their respective churn rates.
 
@@ -118,6 +123,7 @@ Churn rate by age
 In general, the churn rate has an increasing trend through the age brackets. As the age increases the average churn rate for age brackets also increases.
 
 Multiple field investigation
+---
 
 For this task, I will use the function SWITCH() which allows creation of a new column by assigning new results to the values in a column. We will group 3 different contract types into two for easy observation of yearly and monthly contracts. We will further analyze the churn rate based on gender.
 Contract Category = SWITCH('Databel - Data'[Contract Type], "One Year", "Yearly", "Two Year", "Yearly", "Monthly")
@@ -126,6 +132,7 @@ Churn Rate by Category and Gender
 Monthly contract customers churn more than yearly contract customers and the larger churning gender is females.
 
 Group Consumption and Unlimited Plan
+---
 
 Databel has a hypothesis that people who are not on an unlimited data plan are more likely to churn. The task is to investigate this theory and prove if its accurate or not. I will also create a new column Grouped Consumption that categorizes the average monthly GB download into the following groups to determine whether it’s related to the amount of mobile data (GB) used:
 
@@ -137,6 +144,7 @@ Churn Rate by group consumption
 It appears that the hypothesis is incorrect and instead, customers who are on an unlimited plan are more likely to churn.
 
 International Calls and Contract Types
+---
 
 Databel has a request to analyze the international activity of customers and its relationship to churn. They would like to know if paying for an international plan influences customer loyalty. This will also help us find out if customers without international plans are making international calls and vice versa.
 
@@ -149,6 +157,7 @@ Churn Rate by Account Length
 It seems the churn rate decreases over time.
 
 Summary Overview
+---
 
 Databel Overview
 
