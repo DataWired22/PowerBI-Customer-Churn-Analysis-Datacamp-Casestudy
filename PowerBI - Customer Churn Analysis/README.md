@@ -46,6 +46,7 @@ The first step in any analysis is doing a data check. I will create two measures
 
  Number of Customers = COUNT('Databel - Data'[Customer ID])
     Number of unique customers = DISTINCTCOUNT('Databel - Data'[Customer ID])
+    - What should be included as a bare minimum in README files?
 
 ![image](https://user-images.githubusercontent.com/121925698/217404152-1d7a887e-9ea4-4471-8c1d-509843cb50fe.png)
 Both values are the same.
