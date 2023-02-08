@@ -35,9 +35,9 @@ The data
 
 Key Characteristics:
 
-*One big table with 29 different columns with one row per customer.
-*Snapshot of the database at a specific moment in time, meaning there is no time dimension.
-*The dataset contains more than just dimensions. Here is a view of the [metadata](https://assets.datacamp.com/production/repositories/5993/datasets/c55ad82061b13bc07f6516e51cba9883a90bfa27/Metadata%20-%20Case%20Study_Analyzing%20Customer%20Churn%20in%20Power%20BI.pdf)
+* One big table with 29 different columns with one row per customer.
+* Snapshot of the database at a specific moment in time, meaning there is no time dimension.
+* The dataset contains more than just dimensions. Here is a view of the [metadata](https://assets.datacamp.com/production/repositories/5993/datasets/c55ad82061b13bc07f6516e51cba9883a90bfa27/Metadata%20-%20Case%20Study_Analyzing%20Customer%20Churn%20in%20Power%20BI.pdf)
 
 Data check
 ---
@@ -45,7 +45,7 @@ Data check
 The first step in any analysis is doing a data check. I will create two measures to check if the count of customer ids is equal to the count of unique customer ids. This check is particularly important to prevent double-count costs later incase of duplicates.
 
  Number of Customers = COUNT('Databel - Data'[Customer ID])
- Number of unique customers = DISTINCTCOUNT('Databel - Data'[Customer ID])
+    Number of unique customers = DISTINCTCOUNT('Databel - Data'[Customer ID])
 
 ![image](https://user-images.githubusercontent.com/121925698/217404152-1d7a887e-9ea4-4471-8c1d-509843cb50fe.png)
 Both values are the same.
