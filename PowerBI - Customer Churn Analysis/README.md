@@ -50,6 +50,7 @@ The first step in any analysis is doing a data check. I will create two measures
 
 
 ![image](https://user-images.githubusercontent.com/121925698/217404152-1d7a887e-9ea4-4471-8c1d-509843cb50fe.png)
+
 Both values are the same.
 
 Calculating Churn
@@ -186,5 +187,6 @@ Thank you for reading
 
 **Author:**
 Gcinithemba Sherilyn Maphosa
-Data Wired
+
+_Data Wired_
 
